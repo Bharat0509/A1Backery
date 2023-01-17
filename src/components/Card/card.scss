@@ -1,0 +1,44 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid salmon;
+  border-radius: 0.25rem;
+  height: 12rem;
+  width: 40%;
+
+  h3 {
+    font-size: 1.2vw;
+    color: salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    margin:0;
+    padding: 0;
+    @media (max-width: 900px) {
+      font-size: 1.2rem;
+    }
+    svg{
+      font-size: 2vw;
+      @media (max-width: 900px) {
+        font-size: 2rem;
+      }
+    }
+  }
+  p {
+    text-align: center;
+    width: 50%;
+    padding: 0;
+    margin-top:.75rem ;
+  }
+  &:hover {
+    background: salmon;
+    transition: all 400ms linear;
+    h3 {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+div{
+    button{
+        padding: .75rem 2.5rem;
+        color: black;
+        outline: none;
+        border: 1.2px solid salmon;
+        background: salmon;
+        border-radius: .25rem;
+        font-size: 1.2rem;
+        transition: all 400ms ease-in;
+        &:hover{
+            background: transparent;
+            color: salmon;
+            cursor: pointer;
+            font-weight: 500;
+
+        }
+    }
+}

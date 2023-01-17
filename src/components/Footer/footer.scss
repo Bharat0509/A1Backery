@@ -1,0 +1,143 @@
+
+.footer-container {
+  border-top: 1px solid rgba(128, 128, 128, 0.449);
+  margin-top: 5rem;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media (max-width:900px){
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width:600px){
+    grid-template-columns: 1fr;
+  }
+  .footer-container-s1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    span {
+      font-size: 1.2rem;
+      font-weight: 500;
+
+      font: bold;
+      color: salmon;
+    }
+    p {display: flex;
+      align-items: center;
+      text-align: center;
+      color: rgba(45, 45, 45, 0.7);
+      @media (max-width:900px){
+        width: 70%;
+      }
+    }
+  }
+  .heading {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    font: bold;
+    color: salmon;
+  }
+  .footer-container-s2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    .heading {
+      margin-left: 2rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+
+      font: bold;
+      color: salmon;
+    }
+    .links {
+      
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      ul {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: center;
+        li {
+          font: bold;
+          font-weight: 550;
+        }
+      }
+    }
+  }
+  .footer-container-s3 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    ul {
+      text-decoration: none;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: center;
+      li {
+        font: bold;
+        font-weight: 550;
+        font-size: 0.75rem;
+      }
+    }
+  }
+  .footer-container-s4 {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    .heading{
+      align-items: center;
+    }
+    width: 90%;
+    font-size: 0.75rem;
+    gap: 1rem;
+    svg {
+      font: bold;
+    }
+
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 0.1rem;
+      margin-left: 1rem;
+      
+      @media (max-width:600px){
+        margin-left: 6.5rem;
+        
+      }
+      svg {
+        font-size: 2.5rem;
+      }
+      @media (max-width:900px){
+        width: 50%;
+      }
+    }
+    .call {
+      display: flex;
+      margin-left: -1rem;
+      gap: 1.2rem;
+      svg {
+        font-size: 1.2rem;
+      }
+    }
+    .email {
+      display: flex;
+      gap: 1.2rem;
+      svg {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

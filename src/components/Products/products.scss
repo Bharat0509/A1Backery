@@ -1,0 +1,50 @@
+.container{
+    padding: 0 6rem;
+    display: flex;
+    border-left: 1px solid gray;
+}
+.procuct-container{
+    padding: 0 6rem;
+    margin-top: 7rem;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .card{
+        margin: 0 1rem;
+        border-radius: .5rem .5rem 0 0;
+        border: 1px solid rgba(250, 128, 114, 0.607);
+        overflow: hidden;
+        .card-img{
+            img{
+                width: 100%;
+            }
+        }
+        &-name{
+            font-size: 1.2rem;
+            color: salmon;
+            font: bold;
+            font-weight: 550;
+
+        }
+        &-middle{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+            .card-price{
+
+            }
+            .card-rating{
+
+            }
+        }
+        &-desc{
+
+        }
+        &-btn{
+
+        }
+    }
+
+}
